@@ -14,7 +14,9 @@ function makePageForEpisodes(episodeList) {
 
     // loop through each episode in episodeList
     for (const episode of episodeList){
-      
+      // create a div for each episode
+      const episodeElem = document.createElement("div");
+      episodeElem.className = "episode"; 
     }
 
   rootElem.textContent = `Got ${episodeList.length} episode(s)`;
