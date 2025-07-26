@@ -12,6 +12,11 @@ function makePageForEpisodes(episodeList) {
     episodeContainer = document.createElement("div");
     episodeContainer.className = "episode-container";
 
+    // loop through each episode in episodeList
+    for (const episode of episodeList){
+      
+    }
+
   rootElem.textContent = `Got ${episodeList.length} episode(s)`;
 }
 
