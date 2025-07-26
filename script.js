@@ -9,7 +9,7 @@ function makePageForEpisodes(episodeList) {
   rootElem.innerHTML = ""; // clear previous contents so dont keep adding to it when function is called multiple times
 
     // create a div container element to store episodes
-    episodeContainer = document.createElement("div");
+    const episodeContainer = document.createElement("div");
     episodeContainer.className = "episode-container";
 
     // loop through each episode in episodeList
