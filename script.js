@@ -21,8 +21,8 @@ function makePageForEpisodes(episodeList) {
       // append episode div to the container
       episodeContainer.appendChild(episodeElem);
     }
-
-  rootElem.textContent = `Got ${episodeList.length} episode(s)`;
+// append the container with episodes to the rootElem to display on the page
+rootElem.appendChild(episodeContainer);
 }
 
 window.onload = setup;
