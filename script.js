@@ -22,7 +22,14 @@ function makePageForEpisodes(episodeList) {
     // create a div for each episode
     const episodeElem = document.createElement("div");
     episodeElem.className = "episode";
-    // append episode div to the container
+
+    // create a divs for titles of episodes and episode code (S)
+    const titleElem = document.createElement("h3");
+    const episodeCode = makeEpisodeCode(episode.season, episode.number);
+    titleElem.textContent = `${episodeCode} - ${episode.name}`;
+
+    // append divs to containers for each element
+    episodeElem.appendChild(titleElem);
     episodeContainer.appendChild(episodeElem);
   }
   // append the container with episodes to the rootElem to display on the page
