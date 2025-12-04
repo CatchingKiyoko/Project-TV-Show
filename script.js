@@ -28,8 +28,12 @@ function makePageForEpisodes(episodeList) {
     const episodeCode = makeEpisodeCode(episode.season, episode.number);
     titleElem.textContent = `${episodeCode} - ${episode.name}`;
 
+    const episodeImg = document.createElement("img");
+      episodeImg.src = episode.image.medium;
+
     // append divs to containers for each element
     episodeElem.appendChild(titleElem);
+    episodeElem.appendChild(episodeImg);
     episodeContainer.appendChild(episodeElem);
   }
   // append the container with episodes to the rootElem to display on the page
